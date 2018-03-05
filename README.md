@@ -31,6 +31,8 @@ You can set up these rules to automatically notify you if anyone creates a publi
 Here's an example of the AWS S3 Config rule dashboard showing a "non-compliant" S3 bucket.
 ![AWS Config dashboard with non-compliant S3 bucket](./img/config-rule-s3.png)
 
+Want to deploy these rules via a CloudFormation template? The AWS Config Developer Guide has a [preconfigured CloudFormation template](https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-public-read-prohibited.html) to create the `s3-bucket-public-read-prohibited` rule for you.
+
 ## Summary
 
 Amazon S3 is an incredibly useful and foundational service in AWS. Although S3 buckets have always been secure by default, in light of recent major data breaches, AWS has made it easier to see which S3 buckets have been set to "public" read or write access. In this article, I showed you three ways to check which (if any) of your S3 buckets are public: via the S3 console, a free Trusted Advisor check, and via AWS Config rules.
